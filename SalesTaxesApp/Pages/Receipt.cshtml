@@ -1,0 +1,33 @@
+@page "{id:int}"
+@model SalesTaxesApp.Pages.ReceiptModel
+@{
+    ViewData["Title"] = "Receipt";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div>
+    <h2>Items</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in @Model.Receipt.Basket.Items)
+            {
+                <tr>
+                    <td>@item.Name</td>
+                    <td>@item.Price.ToString("0.00")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    Sales Taxes: @Model.Receipt.TotalTax.ToString("0.00")
+    <br>
+    Total: @Model.Receipt.TotalPrice.ToString("0.00")
+  
+</div>

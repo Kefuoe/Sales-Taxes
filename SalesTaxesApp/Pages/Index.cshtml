@@ -1,0 +1,19 @@
+﻿
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Sales Taxes";
+}
+
+<div>
+    <h1>Welcome to the Sales Taxes App</h1>
+
+    <form method="post">
+        <div class="form-group">
+            <label for="inputBasket">Input shopping Basket</label>
+            <textarea class="form-control" id="inputBasket" rows="5" placeholder="Enter items in the format: [quantity] [item] at [price]" asp-for="InputBasket"></textarea>
+        </div>
+        <br>
+        <button type="submit" class="btn btn-primary">Generate Receipt</button>
+    </form>
+</div>
