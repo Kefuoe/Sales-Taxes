@@ -1,2 +1,2 @@
 # Sales-Taxes
-basic tax application
+basic tax application for calculating tax on an input basket
