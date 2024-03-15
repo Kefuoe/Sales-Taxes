@@ -5,8 +5,9 @@ The app is served on localhost:5000/5252
 The main page renders this view:
 ![image](https://github.com/Kefuoe/Sales-Taxes/assets/66252154/2c7d4fbd-21c5-47e7-8496-bf0535157868)
 
-The input data should be in the format : "1 Book at 12,49\r\n1 Music CD at 14,99\r\n1 Chocolate bar at 0,85"
-N.B the price may need to be a decimal point or comma
+The input data should be in the format : "1 Book at 12,49\r\n1 Music CD at 14,99\r\n1 Chocolate bar at 0,85".
+
+N.B the price may need to be a decimal point or comma depending on the PC language setup.
 
 The first input basket: 
 ![image](https://github.com/Kefuoe/Sales-Taxes/assets/66252154/c16c607c-4f3f-440e-b13b-812cd54f3d27)
